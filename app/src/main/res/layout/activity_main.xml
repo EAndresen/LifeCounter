@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.erica.lifecounter.MainActivity"
+    android:background="@android:color/darker_gray">
+
+
+    <TextView
+        android:text="Player Two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerTwoName"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:rotation="180"
+        android:background="@android:drawable/bottom_bar"
+        android:layout_above="@+id/playerOneName"
+        android:layout_alignStart="@+id/playerOneName"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:text="Player One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerOneName"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:background="@android:drawable/bottom_bar"
+        android:layout_above="@+id/playerOneHealth"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="+1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerOneAdd1"
+        android:textSize="35sp"
+        android:layout_below="@+id/playerOneHealth"
+        android:layout_alignStart="@+id/playerOneHealth" />
+
+    <TextView
+        android:text="20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerOneHealth"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        android:layout_above="@+id/playerOneSub1"
+        android:layout_alignStart="@+id/playerOneName"
+        android:layout_alignEnd="@+id/playerOneName" />
+
+    <Button
+        android:text="-1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerOneSub1"
+        android:textSize="35sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/playerOneName" />
+
+    <TextView
+        android:text="20"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/playerTwoHealth"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        android:rotation="180"
+        android:layout_above="@+id/playerTwoName"
+        android:layout_alignStart="@+id/playerTwoName"
+        android:layout_alignEnd="@+id/playerTwoName"
+        android:layout_below="@+id/playerTwoSub1"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:text="-1"
+        android:id="@+id/playerTwoSub1"
+        android:rotation="180"
+        android:textSize="35sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/playerTwoHealth"
+        android:layout_alignEnd="@+id/playerOneAdd1"
+        android:layout_alignBottom="@+id/playerTwoAdd1" />
+
+    <Button
+        android:text="+1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerTwoAdd1"
+        android:rotation="180"
+        android:textSize="35sp"
+        android:saveEnabled="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/playerTwoHealth" />
+
+
+</RelativeLayout>
+
