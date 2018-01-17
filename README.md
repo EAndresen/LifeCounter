@@ -1,2 +1,2 @@
 # LifeCounter
-Simpel life copunter app for Android
+Simpel life counter app for Android
